@@ -47,7 +47,7 @@
         @else
 
             <nav class="nav-menu">
-                <a href="{{ route('shop.history') }}" class="{{ setActive('shop.history') }}">History</a>
+                <a href="{{ route('shop.history') }}" class="{{ request()->routeIs('shop.history') ? 'active' : '' }}">History</a>
             </nav>
 
                 <button class="login-btn" onclick="openModal()">Login</button>
