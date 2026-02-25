@@ -12,7 +12,7 @@
 
     <!-- Main Content -->
     
-    <x-products/>
+    <x-products :products="$products" />
 
     <!-- Login Modal -->
 
