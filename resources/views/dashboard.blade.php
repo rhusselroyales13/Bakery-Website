@@ -21,7 +21,7 @@
     <!-- Product Details -->
 
     
-    <x-product-details/>
+    <x-product-details :product="$product" />
 
 
 
