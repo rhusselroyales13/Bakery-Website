@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 
-@props(['products'])
+@props(['product'])
 
 @foreach ($product as $prd)
     <div class="modal-detail" id="modal-{{ $prd->id }}">
