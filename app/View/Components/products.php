@@ -25,6 +25,6 @@ class products extends Component
     {
         $products = Product::all();
 
-        return view('components.products', compact('products'));
+        return view('components.products', ['products' => $products]);
     }
 }
