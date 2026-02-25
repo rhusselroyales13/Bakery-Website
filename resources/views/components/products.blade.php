@@ -3,7 +3,7 @@
 <main class="main-content">
         <!-- Products Section -->
         <section class="products-section">
-            <h2 class="section-title">Our Products</h2>
+            <h2 class="section-title">Our Products-This website is a school project only</h2>
 
         
             
