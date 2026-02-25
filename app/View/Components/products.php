@@ -15,7 +15,7 @@ class products extends Component
      */
     public function __construct()
     {
-        //
+        $this->products = Product::all();
     }
 
     /**
@@ -23,8 +23,8 @@ class products extends Component
      */
     public function render(): View|Closure|string
     {
-        $products = Product::all();
+        
 
-        return view('components.products', ['products' => $products]);
+        return view('components.products');
     }
 }
