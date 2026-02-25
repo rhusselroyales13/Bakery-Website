@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 use App\Models\Product;
 
-class products extends Component
+class Products extends Component
 {
     /**
      * Create a new component instance.
