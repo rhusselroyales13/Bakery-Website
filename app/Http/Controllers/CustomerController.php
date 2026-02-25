@@ -20,9 +20,10 @@ class CustomerController extends Controller
         
         $cart = Cart::all();
         $products = Product::all();
+        $product = Product::all();
         
 
-        return view('dashboard', compact('products'));
+        return view('dashboard', compact('products', 'product'));
     }
 
 
