@@ -19,9 +19,10 @@ class CustomerController extends Controller
     public function index() {
         
         $cart = Cart::all();
+        $products = Product::all();
         
 
-        return view('dashboard');
+        return view('dashboard', compact('products'));
     }
 
 
