@@ -11,11 +11,11 @@ use App\Models\Product;
 
 class productDetails extends Component
 {
-    
+    public $product;
 
     public function __construct()
     {
-        
+        $this->product = Product::all();
     }
 
     /**
@@ -23,8 +23,8 @@ class productDetails extends Component
      */
     public function render(): View|Closure|string
     {
-        $product = Product::all();
+        
 
-        return view('components.product-details', compact('product'));
+        return view('components.product-details');
     }
 }
