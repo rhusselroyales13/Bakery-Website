@@ -1,0 +1,18 @@
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    text-align: center;        /* center the text */
+    padding: 15px 0;           /* spacing above/below */
+    background-color: #f8f8f8; /* light background to match form */
+    border-top: 1px solid #ccc;/* subtle separation line */
+    font-size: 14px;
+    color: #555;
+    position: fixed;           /* stick to bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+

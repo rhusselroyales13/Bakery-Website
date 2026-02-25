@@ -1,0 +1,178 @@
+/* Modal for Login and Register */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    width: 360px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4a7c6d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #056145;
+}
+
+
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.switch-text span {
+    color: #0a0a0a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.switch-text span:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.genderRow {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #ccc;   /* adds border like other inputs */
+    padding: 8px 12px;        /* spacing inside the border */
+    border-radius: 8px;       /* rounded corners for consistency */
+}
+
+.genderOption {
+    display: flex;
+    align-items: center;
+}
+
+.genderOption input {
+    margin-left: 6px;
+}
+
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+/* Modal for Product Details */
+
+/* Modal background */
+.modal-detail {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* semi-transparent overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content box */
+.modal-product-detail {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 950px;
+    height: 700px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Review Modal */
+
+/* Modal background */
+.modal-review {
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal content box */
+.modal-content-review {
+  background-color: #fff;
+  margin: 10% auto; 
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* star-rating CSS */
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+.star-rating input { display: none; }
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+.star-rating input:checked ~ label { color: gold; }
+.star-rating label:hover,
+.star-rating label:hover ~ label { color: orange; }
+
