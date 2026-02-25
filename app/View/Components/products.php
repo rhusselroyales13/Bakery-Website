@@ -13,6 +13,8 @@ class products extends Component
     /**
      * Create a new component instance.
      */
+    public $products;
+    
     public function __construct()
     {
         $this->products = Product::all();
