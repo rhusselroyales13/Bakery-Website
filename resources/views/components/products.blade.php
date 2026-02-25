@@ -12,6 +12,8 @@
                 <div class="carousel">
                     <!-- Product Card 1 -->
 
+                    @props(['products'])
+                    
                     @foreach ($products as $product)
 
                         <div class="product-card">
